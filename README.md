@@ -31,4 +31,21 @@ Since ydf does not support NodeJS for the moment, we need to grab the **ydf.js**
 </html>
 ```
 
-More to come...
+In the previous example, data represents a **YoutubeResultsPage** object which contains the following attributes:
+
+| Attribute        | Type           | Description  |
+| ------------- |:-------------:| :-----|
+| data      | array | Contains `YoutubeDataObject` objects. |
+| kind      | string      |   String that represents the kind of the retrieved data, `'youtube#playlistListResponse'` or `'youtube#playlistListResponse'`. |
+| nextPageToken | string      |    Token that represents the next results page. |
+| prevPageToken | string      |    Token that represents the previous results page. |
+| privacyStatus | string      |    The privacy status of retrieved data, `'public'` or `'private'` |
+| resultsPerPage | number      |    Number of results per page. (length of the data array per page). |
+| totalResults | number      |    Total number of results. |
+
+
+
+
+
+
+
